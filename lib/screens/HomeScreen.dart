@@ -4,6 +4,8 @@ import 'package:sewaa/library/Card.dart';
 import 'package:sewaa/library/Common.dart';
 import 'package:sewaa/library/MyAppBar.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:page_transition/page_transition.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -89,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "Most Popular",
                         style: TextStyle(
                             height: 2,
-                            fontSize: 17,
+                            fontSize: 23,
                             color: primaryColor,
                             fontWeight: FontWeight.bold),
                       ),
@@ -101,14 +103,20 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontWeight: FontWeight.bold))
                     ],
                   ),
+                  // Container(
+                  //     height: 330,
+                  //     child: ListView.builder(
+                  //       physics: BouncingScrollPhysics(),
+                  //       itemCount: 2,
+                  //       itemBuilder: (context, i) {
+                  //         return PropertyCard1();
+                  //       },
+                  //     )),
                   Container(
                       height: 330,
-                      child: ListView.builder(
+                      child: ListView(
                         physics: BouncingScrollPhysics(),
-                        itemCount: 10,
-                        itemBuilder: (context, i) {
-                          return PropertyCard1();
-                        },
+                        children: [PropertyCard1(),PropertyCard2(),PropertyCard3(),PropertyCard4(),PropertyCard5(),PropertyCard6(),PropertyCard7(),PropertyCard8(),PropertyCard9(),PropertyCard10()],
                       )),
                 ],
               ),

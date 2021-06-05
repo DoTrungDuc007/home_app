@@ -7,15 +7,16 @@ import 'package:sewaa/library/Common.dart';
 import 'package:sewaa/models/Property.dart';
 import 'package:sewaa/screens/ViewLocation.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:sewaa/screens/View/View6.dart';
 
-class PropertyDetailScreen extends StatefulWidget {
+class Pro6 extends StatefulWidget {
   List<PropertyDetail> propertyDetails;
-  PropertyDetailScreen({this.propertyDetails});
+  Pro6({this.propertyDetails});
   @override
   _PropertyDetailScreenState createState() => _PropertyDetailScreenState();
 }
 
-class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
+class _PropertyDetailScreenState extends State<Pro6> {
   @override
   Widget build(BuildContext context) {
     print(widget.propertyDetails.length);
@@ -116,7 +117,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                             children: <Widget>[
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
                                   Icon(
                                     SimpleLineIcons.getIconData("user"),
@@ -134,7 +135,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                                     width: 4,
                                   ),
                                   Text(
-                                    "Vincom Park Place",
+                                    "The Manor Mỹ Đình",
                                     style: TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w800),
@@ -143,7 +144,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Icon(
                                     SimpleLineIcons.getIconData("clock"),
@@ -170,7 +171,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Icon(
                                     AntDesign.getIconData("creditcard"),
@@ -197,7 +198,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Icon(
                                     AntDesign.getIconData("profile"),
@@ -215,7 +216,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                                     width: 4,
                                   ),
                                   Text(
-                                    "191 Bà Triệu",
+                                    "KHu đô thị Mỹ Đình",
                                     style: TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w800),
@@ -243,7 +244,7 @@ class _PropertyDetailScreenState extends State<PropertyDetailScreen> {
                                 context,
                                 PageTransition(
                                     type: PageTransitionType.downToUp,
-                                    child: ViewLocation()));
+                                    child: View6()));
                           },
                           color: primaryColor,
                           child: RichText(

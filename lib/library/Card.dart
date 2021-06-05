@@ -5,6 +5,14 @@ import 'package:flutter/material.dart' as prefix0;
 import 'package:page_transition/page_transition.dart';
 import 'package:sewaa/models/Property.dart';
 import 'package:sewaa/screens/PropertyDetailScreen.dart';
+import 'package:sewaa/screens/Property/Pro2.dart';
+import 'package:sewaa/screens/Property/Pro3.dart';
+import 'package:sewaa/screens/Property/Pro4.dart';
+import 'package:sewaa/screens/Property/Pro5.dart';
+import 'package:sewaa/screens/Property/Pro6.dart';
+import 'package:sewaa/screens/Property/Pro7.dart';
+import 'package:sewaa/screens/Property/Pro8.dart';
+import 'package:sewaa/screens/Property/Pro9.dart';
 import './Common.dart';
 
 class PropertyIntroCard extends StatelessWidget {
@@ -215,66 +223,709 @@ class PropertyCard extends StatelessWidget {
     );
   }
 }
-
 class PropertyCard1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-                color: Colors.black12,
-                offset: const Offset(2, 6),
-                blurRadius: 10)
-          ]),
-      height: 110,
-      child: Row(
-        children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "Mallan Villas",
-                style: prefix0.TextStyle(
-                    fontSize: 22,
-                    color: Color(0xFF465C61),
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "Rental Date: 5th Monthly",
-                style: prefix0.TextStyle(
-                  fontSize: 14,
-                  color: Color(0xFF94979C),
-                  height: 1.8,
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Vincom Park Place",
+
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
                 ),
-              ),
-              Text(
-                "Block-12, Level-6, Unit-6",
-                style: prefix0.TextStyle(
-                  fontSize: 14,
-                  height: 1,
-                  color: Color(0xFF94979C),
+                Text(
+                  "Vincom Bà Triệu, Hà Nội",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
                 ),
-              ),
-              Text(
-                "Past Due: 20 April 2015",
-                style: prefix0.TextStyle(
-                  fontSize: 14,
-                  color: Color(0xFF94979C),
+                Text(
+                  "Address: 191 Bà Triệu",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
                 ),
-              )
-            ],
-          )
-        ],
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: PropertyDetailScreen(propertyDetails: propertyDetails)));
+      },
     );
   }
 }
+class PropertyCard2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Keangnam Hanoi Landmark Tower",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "với chiều cao 336m",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 72 phạm hùng",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro2(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Pacific Palace Lý Thường Kiệt",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Pacific Place cao 19 tầng",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 83 Lý Thường Kiệt",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro3(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Royal City",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "la công trình công cộng hỗn hợp  ",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 72A Nguyễn Trãi, quận Thanh Xuân",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro4(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard5 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Golden Westlake",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "với 370 căn hộ",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 151 Thụy Khuê",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro5(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard6 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "The Manor Mỹ Đình",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Tọa lạc tại Khu đô thị Mỹ Đình – Mễ Trì với 449 căn hộ",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: Khu đô thị Mỹ Đình",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro6(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard7 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "The Link Ciputra",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "gồm 2 tòa chung cư cao cấp L1 và L2 có chiều cao 20 tầng",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: Phạm Văn Đồng, Đông Ngạc, Từ Liêm",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro7(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard8 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Dolphil Plaza Trần Bình",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "với chiều cao 336m",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 6 Nguyễn Hoàng",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro8(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard9 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Hyundai Hill State",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Tọa lạc tại Hà Cầu với 928 căn hộ",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: Villa 2-14 Khu VillA, Đ. Tô Hiệu",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: Pro9(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+class PropertyCard10 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    return InkWell(
+      child: Container(
+
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black12,
+                  offset: const Offset(2, 6),
+                  blurRadius: 10)
+            ]),
+        height: 110,
+        child: Row(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Mandarin Garden Hòa phát",
+                  style: prefix0.TextStyle(
+                      fontSize: 22,
+                      color: Color(0xFF465C61),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Gardencó những ưu điểm vượt trội",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                    height: 1.8,
+                  ),
+                ),
+                Text(
+                  "Address: 72 phạm hùng",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    height: 1,
+                    color: Color(0xFF94979C),
+                  ),
+                ),
+                Text(
+                  "Price: *******",
+                  style: prefix0.TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF94979C),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.rightToLeft,
+                child: PropertyDetailScreen(propertyDetails: propertyDetails)));
+      },
+    );
+  }
+}
+
 
 class PropertyDetailCard extends StatelessWidget {
   final String image;
@@ -285,8 +936,8 @@ class PropertyDetailCard extends StatelessWidget {
       : super(key: key);
   Widget PropertyDetailIntroCard() {
     return Container(
-      height: 80,
-      width: 200,
+      height: 00,
+      width: 180,
       padding: EdgeInsets.only(top: 5, left: 5, right: 2),
       decoration: BoxDecoration(
           color: Colors.white,
